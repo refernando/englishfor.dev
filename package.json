@@ -1,0 +1,28 @@
+{
+  "name": "tcc-english",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@dicebear/collection": "^9.2.2",
+    "@dicebear/core": "^9.2.2",
+    "@google/generative-ai": "0.24.0",
+    "@neondatabase/serverless": "0.10.4",
+    "@primer/octicons-react": "19.15.1",
+    "@primer/react": "37.5.0",
+    "@primer/react-brand": "0.47.2",
+    "@types/react": "18.3.1",
+    "jose": "6.0.8",
+    "next": "15.2.1",
+    "react": "18.3.1",
+    "react-confetti": "^6.4.0",
+    "react-dom": "18.3.1",
+    "recharts": "^3.2.1",
+    "styled-components": "5.3.11"
+  }
+}

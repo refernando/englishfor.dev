@@ -1,0 +1,270 @@
+.page {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  flex-direction: column;
+  flex: 1;
+  padding: 0;
+  gap: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.heroSection {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 50px 200px;
+}
+
+.section {
+  width: 100%;
+  padding: 80px 200px !important;
+}
+
+.ctaSection {
+  width: 100%;
+  padding: 100px 200px !important;
+  background: linear-gradient(
+    135deg,
+    rgba(26, 127, 55, 0.1) 0%,
+    rgba(17, 99, 41, 0.1) 100%
+  );
+}
+
+.featureIcon {
+  font-size: 48px;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.featureColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  min-height: 280px;
+}
+
+.featureColumn h3 {
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.stepCard {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+  padding: 32px;
+  background: rgba(255, 255, 255, 0.03);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.stepCard:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(26, 127, 55, 0.3);
+  transform: translateX(8px);
+}
+
+.stepNumber {
+  font-size: 32px;
+  font-weight: bold;
+  color: #1a7f37;
+  min-width: 50px;
+  height: 50px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(26, 127, 55, 0.2);
+  border-radius: 50%;
+}
+
+.ctaButton {
+  display: inline-block;
+  padding: 16px 32px;
+  background-color: #1a7f37;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 16px;
+  transition: all 0.3s ease;
+  border: 1px solid #1a7f37;
+  text-align: center;
+}
+
+.ctaButton:hover {
+  background-color: #116329;
+  border-color: #116329;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(26, 127, 55, 0.3);
+}
+
+.wfull {
+  width: 100%;
+}
+
+.primary {
+  --brand-button-primary-bgColor-rest: var(--base-color-scale-green-5, #1a7f37);
+  --brand-button-primary-borderColor-rest: var(
+    --base-color-scale-green-5,
+    #1a7f37
+  );
+  --brand-button-primary-bgColor-hover: var(
+    --base-color-scale-green-6,
+    #116329
+  );
+  --brand-button-primary-borderColor-hover: var(
+    --base-color-scale-green-6,
+    #116329
+  );
+  --brand-button-primary-fgColor-rest: #fff;
+}
+
+@media (max-width: 1400px) {
+  .heroSection {
+    padding: 50px 100px;
+  }
+
+  .section {
+    padding: 60px 100px !important;
+  }
+
+  .ctaSection {
+    padding: 80px 100px !important;
+  }
+
+  .featureColumn {
+    min-height: 300px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .featureColumn {
+    min-height: 320px;
+  }
+
+  .featureColumn h3 {
+    min-height: 70px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .heroSection {
+    padding: 40px 60px;
+  }
+
+  .section {
+    padding: 50px 60px !important;
+  }
+
+  .ctaSection {
+    padding: 70px 60px !important;
+  }
+
+  .featureColumn {
+    min-height: auto;
+  }
+
+  .featureColumn h3 {
+    min-height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .heroSection {
+    padding: 32px 24px;
+    min-height: auto;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .section {
+    padding: 40px 24px !important;
+  }
+
+  .ctaSection {
+    padding: 50px 24px !important;
+  }
+
+  .featureIcon {
+    font-size: 40px;
+    margin-bottom: 12px;
+  }
+
+  .featureColumn {
+    min-height: auto;
+  }
+
+  .featureColumn h3 {
+    min-height: auto;
+  }
+
+  .stepCard {
+    flex-direction: column;
+    padding: 24px 20px;
+    gap: 16px;
+  }
+
+  .stepCard:hover {
+    transform: translateX(0);
+    transform: scale(1.01);
+  }
+
+  .stepNumber {
+    font-size: 28px;
+    min-width: 45px;
+    height: 45px;
+  }
+
+  .ctaButton {
+    width: 100%;
+    max-width: 100%;
+    padding: 14px 24px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .heroSection {
+    padding: 24px 16px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .section {
+    padding: 32px 16px !important;
+  }
+
+  .ctaSection {
+    padding: 40px 16px !important;
+  }
+
+  .featureIcon {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+
+  .stepCard {
+    padding: 20px 16px;
+    gap: 12px;
+  }
+
+  .stepNumber {
+    font-size: 24px;
+    min-width: 40px;
+    height: 40px;
+  }
+
+  .ctaButton {
+    padding: 12px 20px;
+    font-size: 14px;
+  }
+}

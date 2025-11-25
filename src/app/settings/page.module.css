@@ -1,0 +1,37 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  width: 500px;
+
+  margin: 0 auto auto auto;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  padding: 24px;
+  border-radius: 6px;
+  border: 1px solid var(--control-borderColor-rest);
+}
+
+.wfull {
+  width: 100%;
+}
+
+.inline {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  margin-bottom: 10px 0;
+}
+
+@media (max-width: 1000px) {
+  .page {
+    width: 90%;
+  }
+}

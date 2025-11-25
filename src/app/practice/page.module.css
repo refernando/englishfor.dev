@@ -1,0 +1,40 @@
+.page {
+  display: flex;
+  justify-items: center;
+  flex-direction: column;
+  flex: 1;
+  gap: 20px;
+
+  width: 1000px;
+  padding: 50px 0;
+  margin: 0 auto;
+}
+
+.wfull {
+  width: 100%;
+}
+
+.link {
+  /* color: var(--fgColor-default); */
+  font-weight: 500;
+}
+
+.completed {
+  color: var(--fgColor-success);
+}
+
+.underConstruction {
+  color: var(--fgColor-attention);
+}
+
+.xp {
+  margin-left: 10px;
+}
+
+@media (max-width: 1000px) {
+  .page {
+    padding: 0;
+
+    width: 90%;
+  }
+}

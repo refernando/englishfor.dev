@@ -1,0 +1,28 @@
+.navbar {
+  height: 64px;
+  z-index: unset !important;
+}
+
+.searchError {
+  padding: 16px;
+}
+
+.icon {
+  margin-right: 5px;
+}
+
+.xp {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+@media (max-width: 1000px) {
+  .brand {
+    display: none;
+  }
+
+  .headerItem {
+    margin-right: 8px !important;
+  }
+}

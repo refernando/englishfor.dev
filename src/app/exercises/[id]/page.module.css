@@ -1,0 +1,145 @@
+.page {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  flex-direction: column;
+  flex: 1;
+
+  padding: 50px 200px;
+  gap: 20px;
+}
+
+.exercise {
+  padding: 24px;
+
+  border-radius: 6px;
+  border: 1px solid var(--control-borderColor-rest);
+
+  overflow-wrap: break-word;
+
+  .buttons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 16px;
+
+    margin-top: 16px;
+  }
+
+  .title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+
+    list-style-type: none;
+
+    .stars {
+      display: flex;
+      gap: 5px;
+    }
+  }
+}
+
+.question {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  .hideQuestion {
+    border-radius: 6px;
+
+    color: var(--bgColor-emphasis);
+    background-color: var(--bgColor-emphasis);
+
+    cursor: pointer;
+    user-select: none;
+
+    &:hover {
+      color: var(--bgColor-neutral-emphasis);
+      background-color: var(--bgColor-neutral-emphasis);
+    }
+  }
+}
+
+.controls {
+  margin-top: 24px;
+  padding: 24px;
+
+  border-radius: 6px;
+  border: 1px solid var(--control-borderColor-rest);
+
+  overflow-wrap: break-word;
+
+  .textarea {
+    width: 100%;
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 16px;
+
+    margin-top: 16px;
+  }
+
+  .errorBanner {
+    margin-top: 16px;
+  }
+}
+
+.finished {
+  width: 100%;
+  max-width: 1000px;
+}
+
+.w1000 {
+  width: 100%;
+  max-width: 1000px;
+}
+
+@media (max-width: 1000px) {
+  .page {
+    padding: 0;
+    padding-top: 28px;
+  }
+
+  .w1000 {
+    width: 90%;
+  }
+
+  .exercise {
+    .title {
+      position: relative;
+      .xp {
+        position: absolute;
+        right: 0;
+        top: -15px;
+      }
+    }
+  }
+
+  .question {
+    flex-direction: column;
+    width: 90%;
+    gap: 10px;
+  }
+
+  .controls {
+    .buttons {
+      /* flex-direction: column; */
+      flex-wrap: wrap;
+    }
+  }
+
+  .blankslate {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
